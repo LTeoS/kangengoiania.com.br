@@ -1,0 +1,7 @@
+export { default as Hero } from './Hero/Hero'
+export { default as CanvasWrapper } from './CanvasWrapper/CanvasWrapper'
+export { default as Products } from './Products/Products'
+export { default as Reason } from './Reason/Reason'
+export { default as Topics } from './Topics/Topics'
+export { default as Explanations } from './Explanations/Explanations'
+export { default as WaterTypes } from './WaterTypes/WaterTypes'
