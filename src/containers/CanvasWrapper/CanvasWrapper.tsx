@@ -31,7 +31,7 @@ const CanvasContainer = () => {
               <Stage
                 intensity={1}
                 environment="apartment"
-                shadows={{ type: 'contact' }}
+                shadows={{ type: 'accumulative' }}
                 adjustCamera={false}
               >
                 <Center>

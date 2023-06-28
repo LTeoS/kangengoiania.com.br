@@ -8,7 +8,7 @@ const Info = (props: { content: string; open: boolean }) => {
       {props.open && (
         <>
           <motion.div
-            className="flex h-[266px] items-center justify-center text-center lg:w-[400px]"
+            className="flex h-[266px] lg:translate-x-[-100px] items-center justify-center text-center lg:w-[400px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -23,7 +23,7 @@ const Info = (props: { content: string; open: boolean }) => {
               state.enhancerAction = false
               state.plateAction = false
             }}
-            className="absolute right-[20px] top-[20px] scale-150 fill-[var(--color-highlight)]"
+            className="absolute right-[20px] top-0 lg:right-[100px] scale-150 fill-[var(--color-highlight)]"
           />
         </>
       )}
