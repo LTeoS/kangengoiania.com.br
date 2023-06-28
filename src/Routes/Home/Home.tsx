@@ -1,4 +1,3 @@
-import React from 'react'
 import { Hero, CanvasWrapper } from '../../containers'
 
 import waves from '../../assets/images/waves.svg'

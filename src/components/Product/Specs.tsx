@@ -1,4 +1,3 @@
-import React from 'react'
 import { SpecsProps } from '../../types'
 
 const Specs = (props: SpecsProps) => {

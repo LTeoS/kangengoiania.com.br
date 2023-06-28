@@ -1,5 +1,5 @@
 /* eslint-disable import/no-absolute-path */
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import bgSm from '../../assets/images/footer/map/bgSm.svg'

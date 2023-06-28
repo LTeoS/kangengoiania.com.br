@@ -1,5 +1,4 @@
 /* eslint-disable import/no-absolute-path */
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { Navbar, Footer, Map, Certifications, Whatsapp } from './components'
 

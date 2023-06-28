@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import state from '../../store'

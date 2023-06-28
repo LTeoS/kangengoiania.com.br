@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import React, { Suspense, useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Center, Stage } from '@react-three/drei'
 import { Buttons, Model, Info } from '../../components'
@@ -29,11 +29,9 @@ const CanvasContainer = () => {
           <Suspense fallback={null}>
             <group position={[-0.3, 0, 0]}>
               <Stage
-                intensity={0.5}
+                intensity={1}
                 environment="apartment"
-                shadows={{
-                  type: 'accumulative',
-                }}
+                shadows={{ type: 'contact' }}
                 adjustCamera={false}
               >
                 <Center>

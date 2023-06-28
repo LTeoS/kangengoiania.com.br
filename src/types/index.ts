@@ -1,5 +1,3 @@
-import { StaticImageData } from 'next/image'
-
 export interface FeaturesProps {
   first?: {
     title: string
@@ -35,16 +33,16 @@ export interface SpecsProps {
 }
 
 export interface GalleryProps {
-  image1?: string | StaticImageData
-  image2?: string | StaticImageData
-  image3?: string | StaticImageData
-  image4?: string | StaticImageData
+  image1?: string
+  image2?: string
+  image3?: string
+  image4?: string
 }
 
 export interface ProductProps {
   id: string
-  model: string | StaticImageData
-  image: string | StaticImageData
+  model: string
+  image: string
   intro: string
   featuresHeader: string
   featuresHeaderSpan: string

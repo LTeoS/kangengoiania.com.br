@@ -1,5 +1,4 @@
 /* eslint-disable import/no-absolute-path */
-import React from 'react'
 import { Product } from '../../components'
 import products from '../../store/products'
 

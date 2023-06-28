@@ -1,5 +1,5 @@
 /* eslint-disable import/no-absolute-path */
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { AiFillCloseCircle } from 'react-icons/ai'

@@ -1,5 +1,5 @@
 /* eslint-disable import/no-absolute-path */
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import hydrogen from '../../assets/images/water/topics/hydrogen.svg'
 import antioxidant from '../../assets/images/water/topics/antioxidant.svg'

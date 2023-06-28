@@ -1,6 +1,4 @@
 /* eslint-disable import/no-absolute-path */
-import React from 'react'
-
 import instagram from '../../assets/images/footer/instagram.svg'
 import whatsapp from '../../assets/images/footer/whatsapp.svg'
 import enagic from '../../assets/images/footer/enagic.svg'

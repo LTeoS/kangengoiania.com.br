@@ -1,5 +1,4 @@
 /* eslint-disable import/no-absolute-path */
-import React from 'react'
 import { motion } from 'framer-motion'
 
 import cert1 from '../../assets/images/footer/certifications/cert1.svg'

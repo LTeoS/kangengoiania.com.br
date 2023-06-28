@@ -1,6 +1,4 @@
 /* eslint-disable import/no-absolute-path */
-import React from 'react'
-
 import waterCup from '../../assets/images/water/waterCup.svg'
 
 const Reason = () => {
