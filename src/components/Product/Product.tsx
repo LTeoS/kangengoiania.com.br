@@ -37,6 +37,11 @@ const Product = (props: ProductProps) => {
     shown: { translateY: 0 },
   }
 
+  useEffect(() => {
+    snap.showProduct === props.id &&
+      ref.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [snap.showProduct, props.id])
+
   return (
     <motion.div
       ref={ref}

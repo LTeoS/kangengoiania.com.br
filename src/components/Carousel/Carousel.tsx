@@ -95,16 +95,16 @@ const Carousel = () => {
         modules={[Pagination, Autoplay]}
       >
         <SwiperSlide>
-          <Slide hero={heroK8} />
+          <Slide hero={heroK8} product="k8" />
         </SwiperSlide>
         <SwiperSlide>
-          <Slide hero={heroSd} />
+          <Slide hero={heroSd} product="sd" />
         </SwiperSlide>
         <SwiperSlide>
-          <Slide hero={heroJr} />
+          <Slide hero={heroJr} product="jr" />
         </SwiperSlide>
         <SwiperSlide>
-          <Slide hero={heroAnespa} />
+          <Slide hero={heroAnespa} product="anespa" />
         </SwiperSlide>
       </Swiper>
     </div>

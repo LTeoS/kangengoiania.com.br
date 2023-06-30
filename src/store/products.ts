@@ -34,7 +34,7 @@ const products = {
       size: '135 X 75',
       orp: '-722',
       range: '2.5 - 11.5',
-      generates: '5 tipos de água',
+      generates: '8 tipos de água',
       power: '230',
       weight: '5',
       dimensions: '279 X 345 X 147',
@@ -62,7 +62,7 @@ const products = {
       first: {
         title: 'User Friendly',
         description:
-          'Com apenas um toque de botão, você pode ter acesso a qualquer uma das 5 águas que escolher.',
+          'Com apenas um toque de botão, você pode ter acesso a qualquer uma das 7 águas que escolher.',
       },
       second: {
         title: 'Confirmação por voz',
@@ -84,7 +84,7 @@ const products = {
       size: '135 X 75',
       orp: '-631',
       range: '2.5 - 11.5',
-      generates: '5 tipos de água',
+      generates: '7 tipos de água',
       power: '230',
       weight: '6.3',
       dimensions: '264 X 338 X 171',

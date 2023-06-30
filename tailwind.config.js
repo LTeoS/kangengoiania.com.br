@@ -3,9 +3,18 @@
 const plugin = require('tailwindcss/plugin')
 
 export default {
+  mode: 'jit',
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx,html}'],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        button:
+          '0px 1.850000023841858px 3.1500000953674316px 0px rgba(27, 90, 112, 0.02), 0px 8.149999618530273px 6.519999980926514px 0px rgba(27, 90, 112, 0.04), 0px 20px 13px 0px rgba(27, 90, 112, 0.05), 0px 38.52000045776367px 25.479999542236328px 0px rgba(27, 90, 112, 0.06), 0px 64.80999755859375px 46.849998474121094px 0px rgba(27, 90, 112, 0.08), 0px 100px 80px 0px rgba(27, 90, 112, 0.10);',
+      },
+      backgroundSize: {
+        footer: '100% 400px;',
+      },
+    },
   },
   plugins: [
     plugin(function ({ addUtilities, addVariant }) {
@@ -27,7 +36,8 @@ export default {
           borderLeftWidth: '1px',
         },
       })
-      addVariant('child-hover', '&:hover > img', '&:active > img')
+      addVariant('child-hover', '&:hover > img')
+      addVariant('child', '& > img')
     }),
   ],
 }

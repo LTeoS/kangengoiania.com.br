@@ -1,6 +1,4 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { AiFillCloseCircle } from 'react-icons/ai'
-import state from '../../store'
 
 const Info = (props: { content: string; open: boolean }) => {
   return (
@@ -8,23 +6,13 @@ const Info = (props: { content: string; open: boolean }) => {
       {props.open && (
         <>
           <motion.div
-            className="flex h-[266px] lg:translate-x-[-100px] items-center justify-center text-center lg:w-[400px]"
+            className="flex h-[266px] font-extralight max-w-[320px] lg:translate-x-[-50px] lg:max-w-[500px] lg:h-[400px] items-center justify-center text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <p className="w-[80%]">{props.content}</p>
+            <p className="lg:max-w-[420px] lg:text-[20px]">{props.content}</p>
           </motion.div>
-          <AiFillCloseCircle
-            onClick={() => {
-              state.show = true
-              state.filterAction = false
-              state.displayAction = false
-              state.enhancerAction = false
-              state.plateAction = false
-            }}
-            className="absolute right-[20px] top-0 lg:right-[100px] scale-150 fill-[var(--color-highlight)]"
-          />
         </>
       )}
       `

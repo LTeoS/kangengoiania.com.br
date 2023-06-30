@@ -19,7 +19,7 @@ const HeroBg = (props: HeroBgProps) => {
         >
           <img
             src={props.bgMob}
-            className="absolute left-[50%] top-[50%] max-w-[390px] translate-x-[-50%] translate-y-[-70%] transform md:hidden"
+            className="absolute left-[50%] top-[50%] max-w-[330px] translate-x-[-50%] translate-y-[-70%] transform md:hidden"
             alt="Kangen-Goiania-Hero-Background-Title"
           />
           <img

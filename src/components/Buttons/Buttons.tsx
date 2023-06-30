@@ -2,7 +2,6 @@
 import Button from './Button'
 import { useSnapshot } from 'valtio'
 import state from '../../store'
-import { motion } from 'framer-motion'
 
 import filter from '../../assets/icons/buttons/filter.svg'
 import display from '../../assets/icons/buttons/display.svg'
@@ -12,71 +11,109 @@ import plates from '../../assets/icons/buttons/plates.svg'
 const Buttons = () => {
   const snap = useSnapshot(state)
 
-  const variants = {
-    isShown: { opacity: 1 },
-    isHidden: { opacity: 0.3 },
-  }
-
   return (
-    <motion.div
-      className="flex w-full flex-row justify-center gap-[16px] md:gap-[24px] lg:h-[500px] lg:max-w-[260px] lg:flex-col lg:gap-[64px]"
-      initial={{ opacity: 0 }}
-      animate={snap.show ? 'isShown' : 'isHidden'}
-      variants={variants}
-    >
-      <div className="flex flex-col gap-[16px] md:flex-row md:gap-[24px] lg:flex-col lg:gap-[64px]">
+    <div className="flex w-full md:max-w-[700px] flex-row justify-center gap-[16px] lg:h-[500px] lg:gap-[20%] lg:max-w-[260px] lg:flex-col">
+      <div className="flex flex-col gap-[16px] md:flex-1 md:flex-row lg:flex-col lg:justify-between">
         <Button
           title={'Filtro'}
           thumb={filter}
-          onClick={
-            snap.show
-              ? () => {
+          onClick={() => {
+            if (snap.filterAction) {
+              state.filterAction = false
+              state.isAnimationActive = false
+              state.show = true
+              state.activeAction = ''
+              return
+            }
+            state.displayAction = false
+            state.enhancerAction = false
+            state.plateAction = false
+            snap.isAnimationActive
+              ? setTimeout(() => {
                   state.filterAction = true
-                  state.show = false
-                }
-              : () => null
-          }
+                }, 1000)
+              : (state.filterAction = true)
+            state.activeAction = 'Filtro'
+            state.isAnimationActive = true
+            state.show = false
+          }}
         />
         <Button
           title={'Display'}
           thumb={display}
-          onClick={
-            snap.show
-              ? () => {
+          onClick={() => {
+            if (snap.displayAction) {
+              state.displayAction = false
+              state.isAnimationActive = false
+              state.show = true
+              state.activeAction = ''
+              return
+            }
+            state.filterAction = false
+            state.enhancerAction = false
+            state.plateAction = false
+            snap.isAnimationActive
+              ? setTimeout(() => {
                   state.displayAction = true
-                  state.show = false
-                }
-              : () => null
-          }
+                }, 1000)
+              : (state.displayAction = true)
+            state.activeAction = 'Display'
+            state.isAnimationActive = true
+            state.show = false
+          }}
         />
       </div>
-      <div className="flex flex-col gap-[16px] md:flex-row md:gap-[24px] lg:flex-col lg:gap-[64px]">
+      <div className="flex flex-col md:flex-1 gap-[16px] md:flex-row lg:flex-col lg:justify-between">
         <Button
           title={'Enhancer'}
           thumb={bottle}
-          onClick={
-            snap.show
-              ? () => {
+          onClick={() => {
+            if (snap.enhancerAction) {
+              state.enhancerAction = false
+              state.isAnimationActive = false
+              state.show = true
+              state.activeAction = ''
+              return
+            }
+            state.filterAction = false
+            state.displayAction = false
+            state.plateAction = false
+            snap.isAnimationActive
+              ? setTimeout(() => {
                   state.enhancerAction = true
-                  state.show = false
-                }
-              : () => null
-          }
+                }, 1000)
+              : (state.enhancerAction = true)
+            state.activeAction = 'Enhancer'
+            state.isAnimationActive = true
+            state.show = false
+          }}
         />
         <Button
           title={'Placas'}
           thumb={plates}
-          onClick={
-            snap.show
-              ? () => {
+          onClick={() => {
+            if (snap.plateAction) {
+              state.plateAction = false
+              state.isAnimationActive = false
+              state.show = true
+              state.activeAction = ''
+              return
+            }
+            state.filterAction = false
+            state.displayAction = false
+            state.enhancerAction = false
+            snap.isAnimationActive
+              ? setTimeout(() => {
                   state.plateAction = true
-                  state.show = false
-                }
-              : () => null
-          }
+                }, 1000)
+              : (state.plateAction = true)
+            state.activeAction = 'Placas'
+            state.isAnimationActive = true
+            state.show = false
+          }}
         />
       </div>
-    </motion.div>
+    </div>
   )
 }
 

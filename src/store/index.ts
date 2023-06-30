@@ -6,10 +6,9 @@ const state = proxy({
   enhancerAction: false,
   plateAction: false,
   show: true,
-  showK8: false,
-  showSD: false,
-  showWave: true,
   showProduct: '',
+  isAnimationActive: false,
+  activeAction: '',
 })
 
 export default state

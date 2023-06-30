@@ -32,10 +32,10 @@ const Map = () => {
         <img
           src={logo}
           alt="Kangen-Goiania-Map-logo"
-          className="max-w-[230px] md:max-w-[300px] lg:max-w-[600px]"
+          className="max-w-[200px] md:max-w-[300px] lg:max-w-[400px]"
         />
-        <h1 className="text-[24px] font-light text-white md:text-[30px] lg:text-[40px]">
-          pelo mundo
+        <h1 className="font-light text-white md:text-[30px]">
+          Escritórios pelo mundo
         </h1>
       </div>
       <motion.div
@@ -45,31 +45,31 @@ const Map = () => {
         <img
           src={map}
           alt="Kangen-Goiania-Map"
-          className="max-w-[450px] md:max-w-[900px] lg:max-w-[1500px]"
+          className="max-w-[450px] md:max-w-[900px] lg:max-w-[1000px]"
         />
       </motion.div>
-      <div className="flex max-w-[300px] flex-col items-start gap-[8px] text-[24px] md:text-[30px] lg:text-[60px]">
+      <div className="flex max-w-[300px] flex-col items-start gap-[8px] text-[18px] md:text-[30px]">
         <div className="flex flex-row items-center gap-[4px] md:gap-[8px]">
-          <div className="flex-[0.7] rounded-md bg-[var(--color-highlight)] px-[8px] py-[4px] text-white lg:rounded-xl lg:px-[16px]">
+          <div className="flex-[0.7] rounded-md bg-[var(--color-highlight)] px-[6px] py-[4px] text-white lg:rounded-xl lg:px-[12px]">
             2
           </div>
-          <div className="flex-[0.7] rounded-md bg-[var(--color-highlight)] px-[8px] py-[4px] text-white lg:rounded-xl lg:px-[16px]">
+          <div className="flex-[0.7] rounded-md bg-[var(--color-highlight)] px-[6px] py-[4px] text-white lg:rounded-xl lg:px-[12px]">
             5
           </div>
-          <h1>Países</h1>
+          <h1 className="ml-[8px]">Países</h1>
         </div>
         <div className="flex flex-row items-center gap-[4px] md:gap-[8px]">
-          <div className="flex-[0.7] rounded-md bg-white px-[8px] py-[4px] text-[var(--color-highlight)] lg:rounded-xl lg:px-[16px]">
+          <div className="flex-[0.7] rounded-md bg-white px-[6px] py-[4px] text-[var(--color-highlight)] lg:rounded-xl lg:px-[12px]">
             4
           </div>
-          <div className="flex-[0.7] rounded-md bg-white px-[8px] py-[4px] text-[var(--color-highlight)] lg:rounded-xl lg:px-[16px]">
+          <div className="flex-[0.7] rounded-md bg-white px-[6px] py-[4px] text-[var(--color-highlight)] lg:rounded-xl lg:px-[12px]">
             2
           </div>
-          <h1>Localidades</h1>
+          <h1 className="ml-[8px]">Localidades</h1>
         </div>
       </div>
-      <div className="flex w-full flex-row justify-center text-[24px] italic lg:max-w-[1000px] lg:text-[30px]">
-        <div className="flex min-w-[180px] flex-1 flex-col text-center ">
+      <div className="flex w-full flex-row max-w-[320px] font-[300] justify-center text-[18px] italic lg:max-w-[1000px] lg:text-[30px]">
+        <div className="flex flex-1 flex-col text-center ">
           <h1>Brasil</h1>
           <h1>Portugal</h1>
           <h1>França</h1>
@@ -88,7 +88,7 @@ const Map = () => {
           <h1>Malásia</h1>
           <h1>Filipinas</h1>
         </div>
-        <div className="flex min-w-[180px] flex-1 flex-col text-center">
+        <div className="flex flex-1 flex-col text-center">
           <h1>Singapura</h1>
           <h1>Tailândia</h1>
           <h1>Coreia do Sul</h1>
