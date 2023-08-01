@@ -4,7 +4,7 @@ import enagic from '../../assets/images/enagic/enagic.svg'
 import factory from '../../assets/images/enagic/factory.svg'
 import logo from '../../assets/images/enagic/logo.svg'
 
-const Enagic = () => {
+const Enagic: React.FC = () => {
   return (
     <div className="w-full flex justify-center items-center py-[112px] lg:py-[160px]">
       <div className="flex flex-col gap-[24px] justify-between items-center md:flex-row text-[12px] text-center lg:text-left md:text-[14.61px] w-full max-w-[281px] md:max-w-[1049px]">
