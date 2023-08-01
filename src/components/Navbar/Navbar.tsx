@@ -11,22 +11,22 @@ const Navbar = () => {
   const [menu, toggleMenu] = useState(false)
 
   return (
-    <div className="mb-[32px] flex w-full flex-row items-center justify-between gap-[80px] px-[20px] py-[20px] md:mb-0 md:mb-[96px] md:px-[40px] lg:mb-[0px] lg:justify-center">
+    <div className="absolute top-[12px] md:top-[24px] lg:top-[64px] flex w-full flex-row items-center justify-between gap-[72px] px-[20px] md:mb-0 md:mb-[96px] md:px-[40px] lg:mb-[0px] lg:justify-center">
       <Link
-        className="hidden max-w-[125px] flex-1 text-[24px] font-light tracking-widest lg:flex"
+        className="hidden max-w-[125px] flex-1 font-light tracking-widest lg:flex"
         to={'/Produtos'}
       >
         Produtos
       </Link>
       <Link to={'/'}>
         <img
-          className=" max-w-[220px] flex-1 md:max-w-[300px] lg:max-w-[403px]"
+          className=" max-w-[220px] flex-1 md:max-w-[289px]"
           src={logo}
           alt="Kangen-Navbar-Logo"
         />
       </Link>
       <Link
-        className="hidden max-w-[190px] flex-1 text-[24px] font-light tracking-widest lg:flex"
+        className="hidden max-w-[190px] flex-1 font-light tracking-widest lg:flex"
         to={'/AguaKangen'}
       >
         Água Kangen

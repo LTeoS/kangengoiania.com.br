@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Autoplay } from '../../../node_modules/swiper'
-import { Slide, HeroBg, Tape } from '../../components'
+import { Slide, HeroBg } from '../../components'
 
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
@@ -32,32 +32,6 @@ const Carousel = () => {
 
   return (
     <div className="relative flex flex-col items-center w-full max-w-[100vw] overflow-hidden py-[24px] md:py-[48px] lg:pb-[24px]">
-      <div className="flex h-[20px] w-full items-center justify-center bg-[var(--color-highlight)] md:max-w-[260px] md:h-[24px] opacity-30 md:opacity-100 md:rounded-lg">
-        <Tape
-          activeIndex={activeIndex}
-          slideIndex={0}
-          line="LEVELUK "
-          model="K8"
-        />
-        <Tape
-          activeIndex={activeIndex}
-          slideIndex={1}
-          line="LEVELUK "
-          model="SD501 Platinum"
-        />
-        <Tape
-          activeIndex={activeIndex}
-          slideIndex={2}
-          line="LEVELUK "
-          model="JRIV"
-        />
-        <Tape
-          activeIndex={activeIndex}
-          slideIndex={3}
-          line="ANESPA "
-          model="ANSP-01"
-        />
-      </div>
       <HeroBg
         activeIndex={activeIndex}
         slideIndex={0}

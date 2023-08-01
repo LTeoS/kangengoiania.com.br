@@ -19,12 +19,12 @@ const HeroBg = (props: HeroBgProps) => {
         >
           <img
             src={props.bgMob}
-            className="absolute left-[50%] top-[50%] max-w-[330px] translate-x-[-50%] translate-y-[-70%] transform md:hidden"
+            className="absolute left-[50%] top-[50%] max-w-[330px] opacity-10 translate-x-[-50%] translate-y-[-70%] transform md:hidden"
             alt="Kangen-Goiania-Hero-Background-Title"
           />
           <img
             src={props.bgDesk}
-            className="absolute left-[50%] top-[50%] hidden translate-x-[-50%] translate-y-[-70%] transform md:flex md:max-w-[768px] lg:max-w-[1350px]"
+            className="absolute left-[50%] top-[50%] hidden opacity-10 translate-x-[-50%] translate-y-[-70%] transform md:flex md:max-w-[768px] lg:max-w-[1265px]"
             alt="Kangen-Goiania-Hero-Background-Title"
           />
         </motion.div>

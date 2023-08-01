@@ -16,7 +16,7 @@ const Slide = (props: SlideProps & React.HTMLProps<HTMLButtonElement>) => {
       >
         <img
           src={props.hero}
-          className="max-w-[290px] md:max-w-[500px] lg:max-w-[500px]"
+          className="max-w-[260px] md:max-w-[300px] lg:max-w-[400px]"
           alt="Kangen-Goiania-Slide-Image"
         />
       </Link>

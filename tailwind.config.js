@@ -14,6 +14,10 @@ export default {
       backgroundSize: {
         footer: '100% 400px;',
       },
+      colors: {
+        main: '#1B5A70',
+        opacity: 'rgba(27, 90, 112, 0.05)',
+      },
     },
   },
   plugins: [

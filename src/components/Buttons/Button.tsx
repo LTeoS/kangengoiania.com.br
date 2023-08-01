@@ -14,7 +14,7 @@ const Button = (
 
   return (
     <button
-      className={`flex h-[48px] w-full flex-row items-center justify-start gap-[16px] rounded-lg px-[8px] px-[8px] py-[4px] transition-all duration-100 lg:hover:bg-[var(--color-highlight)] lg:hover:text-white lg:h-[56px] lg:child-hover:thumb-hover lg:hover:shadow-button ${
+      className={`flex h-[48px] w-full flex-row items-center justify-start gap-[16px] lg:gap-[24px] rounded-lg px-[8px] px-[8px] py-[4px] lg:px-[24px] lg:hover:opacity-30 transition-all duration-50 lg:hover:bg-[var(--color-highlight)] lg:hover:text-white lg:h-[69.35px] lg:child-hover:thumb-hover lg:hover:shadow-button ${
         active
           ? `bg-[var(--color-highlight)] text-white shadow-button child:thumb-hover`
           : ''
@@ -26,7 +26,7 @@ const Button = (
         src={props.thumb}
         alt="Kangen-Goiania-Button-Icon"
       />
-      <p className="flex-1 text-left text-[18px] lg:text-[24px] tracking-wider">
+      <p className="flex-1 text-left text-[14.61px] lg:text-[14.61px] font-semibold">
         {props.title}
       </p>
     </button>

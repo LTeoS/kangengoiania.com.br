@@ -12,8 +12,8 @@ const Buttons = () => {
   const snap = useSnapshot(state)
 
   return (
-    <div className="flex w-full md:max-w-[700px] flex-row justify-center gap-[16px] lg:h-[500px] lg:gap-[20%] lg:max-w-[260px] lg:flex-col">
-      <div className="flex flex-col gap-[16px] md:flex-1 md:flex-row lg:flex-col lg:justify-between">
+    <div className="flex w-full md:max-w-[700px] flex-row justify-center gap-[16px] lg:h-[364px] lg:justify-between lg:max-w-[206.98px] lg:flex-col">
+      <div className="flex flex-col gap-[16px] md:flex-1 md:flex-row lg:flex-col lg:justify-around">
         <Button
           title={'Filtro'}
           thumb={filter}
@@ -63,7 +63,7 @@ const Buttons = () => {
           }}
         />
       </div>
-      <div className="flex flex-col md:flex-1 gap-[16px] md:flex-row lg:flex-col lg:justify-between">
+      <div className="flex flex-col md:flex-1 gap-[16px] md:flex-row lg:flex-col lg:justify-around">
         <Button
           title={'Enhancer'}
           thumb={bottle}

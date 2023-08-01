@@ -33,7 +33,7 @@ type ProductsType = typeof products
 
 const Products = () => {
   return (
-    <div className="my-[32px] flex w-full flex-col gap-[48px] md:my-0 md:mb-[64px] md:gap-[0px] lg:mt-[32px] lg:gap-[64px]">
+    <div className="flex w-full flex-col mt-[160px] gap-[64px] lg:mt-[200px]">
       {Object.keys(products).map((key) => {
         let model: string
         let image: string

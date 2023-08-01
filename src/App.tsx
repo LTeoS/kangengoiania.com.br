@@ -4,7 +4,7 @@ import { Navbar, Footer, Map, Certifications, Whatsapp } from './components'
 
 const App = () => {
   return (
-    <div className="h-full w-full lg:pt-[48px]">
+    <div className="h-full w-full">
       <Navbar />
       <Outlet />
       <Whatsapp />
